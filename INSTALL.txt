@@ -1,0 +1,12 @@
+Installation instructions for the Coinvent System:
+=======================================================
+
+Requirements:
+
+--  A linux operating system preferably Ubuntu Trusty Tahr 14.04 or later.
+--  Installation by root of the HETS toolkit: 
+    http://www.informatik.uni-bremen.de/agbkb/forschung/formal_methods/CoFI/installation_e.htm
+
+The following packages should be installed using a package manager such as apt-get or synaptic. 
+
+liblablgtksourceview2-ocaml-dev
