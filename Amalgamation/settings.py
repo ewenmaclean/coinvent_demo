@@ -51,4 +51,4 @@ hetsExe = 'hets'
 
 inputFile = "/home/ewen/coinvent_demo/Amalgamation/music_blend.casl"
 
-inputSpaceNames = ["G7","Bbmin"]
+inputSpaceNames = ["Emaj7","Fmin7"]
