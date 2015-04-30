@@ -14,6 +14,31 @@ lilypond
 timidity
 imagemagick
 
-Install on your machine cpdf from here:
+Install on your machine cpdf from here (Choose the right exectuable)
+http://community.coherentpdf.com
+
+=======
+
+Run the following command in your home directory (~):
+
+git clone https://github.com/ewenmaclean/coinvent_demo
+
+=======
+
+Now run
+
+cd ~/coinvent_demo/ 
+git clone https://AMALGAMATION_LOCATION
+
+======
+
+Now for Cellular Automata run
+
+cd ~/coinvent_demo/2dca
+..
+
+======
+
+Now you should be ready to run the system - some examples are in the examples directory.
 
 
