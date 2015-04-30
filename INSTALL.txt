@@ -23,22 +23,39 @@ Run the following command in your home directory (~):
 
 git clone https://github.com/ewenmaclean/coinvent_demo
 
-=======
+now type the following commands:
 
-Now run
+cd ~/coinvent_demo
+./build_interface
 
-cd ~/coinvent_demo/ 
-git clone https://AMALGAMATION_LOCATION
+you can now run the system by typing
+cd ~/coinvent_demo
+./coinvent
+
+The following extras are optional to give a desktop icon on ubuntu, and useful casl syntax highlighting:
+======
+
+In ubuntu, run the following commands:
+
+cd ~/coinvent_demo
+sudo cp casl.lang /usr/share/gtksourceview-2.0/language-specs
+sudo cp casl.xml /usr/share/mime/packages
+sudo update-mime-database
 
 ======
 
-Now for Cellular Automata run
+Edit the file coinvent.desktop and run_coinvent.sh in the coinvent_demo directory, replace the $HOME with the actual value of $HOME -- i.e. the result of typing
 
-cd ~/coinvent_demo/2dca
-..
+echo $HOME
 
-======
+now copy the desktop item and make the exectuable runnable - type these commands:
 
-Now you should be ready to run the system - some examples are in the examples directory.
+cd ~/coinvent_demo
+chmod a+x run_coinvent.sh
+cp coinvent.desktop ~/Desktop
+
+===
+
+Now you should be ready to run the system by double clicking the item on the Desktop - some examples are in the examples directory.
 
 

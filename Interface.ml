@@ -92,7 +92,7 @@ let nothing () = ()
 
 
 let run2dca () = 
-  ignore(Unix.system(path^"2dca.jar&"));()
+  ignore(Unix.system("java -jar "^path^"2dca.jar&"));()
 (* PARSE FOR MUSIC OR MATHEMATICS HERE - CALL PDF *)
 
 let vpain_all = GPack.paned `VERTICAL ~packing:vbox1#add ()
