@@ -7,15 +7,19 @@ Requirements:
 --  Installation by root of the HETS toolkit: 
     http://www.informatik.uni-bremen.de/agbkb/forschung/formal_methods/CoFI/installation_e.htm
 
-The following packages should be installed using a package manager such as apt-get or synaptic. 
+The following packages should be installed using a package manager such as apt-get or synaptic. For example run
 
-liblablgtksourceview2-ocaml-dev
-lilypond
-timidity
-imagemagick
+sudo apt-get install liblablgtksourceview2-ocaml-dev lilypond timidity imagemagick java-common python2.7 python2.7-dev lua5.1 lua5.1-policy-dev
 
-Install on your machine cpdf from here (Choose the right exectuable)
+Install on your machine cpdf from here (Choose the right exectuable for your operating system):
+
 http://community.coherentpdf.com
+
+=======
+
+Install the Amalgamation software in your home directory (~):
+ 
+git clone https://github.com/meppe/Amalgamation.git
 
 =======
 

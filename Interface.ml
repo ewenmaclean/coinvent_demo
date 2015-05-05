@@ -82,7 +82,7 @@ let get_lines filename =
   try
     while true; do
       let l = input_line chan in
-      lines := (l,path^"Amalgamation/"^l)::!lines
+      lines := (l,path_home^"/Amalgamation/"^l)::!lines
     done; []
   with End_of_file ->
     close_in chan;
@@ -480,7 +480,7 @@ let add_blends () =
       (let preamble = r_open_in (path^"music_casl_pre.casl") in
        let in1 = !source_view1#source_buffer#get_text () in
        let in2 = !source_view2#source_buffer#get_text () in
-       let oc = open_out (path^"Amalgamation/music_blend.casl") in
+       let oc = open_out (path_home^"/Amalgamation/music_blend.casl") in
        Printf.fprintf oc "%s" (preamble^"\n"^in1^"\n"^in2^"\n");
        close_out oc;
        sp1 := Nameparser.chord1 Namelexer.token (Lexing.from_string in1);
@@ -493,14 +493,14 @@ let add_blends () =
 	    vpain_all#add2 list)
 	    else
 	   let settings_preamble = r_open_in (path^"settings_pre.py") in
-	   let settings_input_file = "inputFile = \""^path^"Amalgamation/music_blend.casl\"\n" in
+	   let settings_input_file = "inputFile = \""^path_home^"/Amalgamation/music_blend.casl\"\n" in
 	   let input_space_names = "inputSpaceNames = [\""^(!sp1)^"\",\""^(!sp2)^"\"]" in
-	   let oc = open_out (path^"Amalgamation/settings.py") in
+	   let oc = open_out (path_home^"/Amalgamation/settings.py") in
 	   Printf.fprintf oc "%s" (settings_preamble^"\n"^settings_input_file^"\n"^input_space_names^"\n");
 	   close_out oc;
-	   let _ = ignore(Unix.system("cd "^path^"Amalgamation/;python "^path^"Amalgamation/run-blending.py")) in
+	   let _ = ignore(Unix.system("cd "^path_home^"/Amalgamation/;python "^path_home^"/Amalgamation/run-blending.py")) in
 	   (*%%% need to call amalgams here*)
-	   let list2 = get_lines (path^"Amalgamation/blendFiles.txt") in  
+	   let list2 = get_lines (path_home^"/Amalgamation/blendFiles.txt") in  
 	   List.iter !scrolled_window#remove !scrolled_window#children;
 	   let list = create_list_blends list2 () in
 	   vpain_all#add2 list))

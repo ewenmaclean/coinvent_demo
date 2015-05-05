@@ -25,6 +25,9 @@ darwinTimeLimit = 2
 hetsExe = 'hets'
 # hetsExe = '/media/psf/Home/svn/coinvent/Amalgamation/hetsPrio' # This is the experimental version with priorities by Mihai.
 
+###### Switch to enable the explicit generation of blend files (see function writeBlends.py) ######
+genExplicitBlendFiles = True
+
 
 ############################
 ###### CASL-specific #######
