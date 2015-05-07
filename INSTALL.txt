@@ -5,7 +5,7 @@ Requirements:
 
 --  A linux operating system preferably Ubuntu Trusty Tahr 14.04 or later.
 --  Installation by root of the HETS toolkit: 
-    http://www.informatik.uni-bremen.de/agbkb/forschung/formal_methods/CoFI/installation_e.htm
+    http://www.informatik.uni-bremen.de/agbkb/forschung/formal_methods/CoFI/hets/installation_e.htm
 
 The following packages should be installed using a package manager such as apt-get or synaptic. For example run
 
@@ -14,6 +14,17 @@ sudo apt-get install liblablgtksourceview2-ocaml-dev lilypond timidity imagemagi
 Install on your machine cpdf from here (Choose the right exectuable for your operating system):
 
 http://community.coherentpdf.com
+
+place the right executable (cpdf) in your path for example, in a terminal from the directory where cpdf is downloaded type
+
+sudo cp cpdf /usr/bin
+sudo chmod a+x /usr/bin/cpdf
+
+to check /usr/bin is in your path type
+
+echo $PATH
+
+(choose a directory that is displayed by that command)
 
 =======
 

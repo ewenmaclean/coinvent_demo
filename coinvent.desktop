@@ -2,7 +2,7 @@
 Name = Coinvent
 Comment = Open Blending Mechanism
 Exec = $HOME/coinvent_demo/run_coinvent.sh
-Icon = $HOME/ewen/coinvent_demo/coinvent.png
+Icon = $HOME/coinvent_demo/coinvent.png
 Terminal = false
 Type = Application
 Categories = Utility;Application;
